@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context="com.apchernykh.todo.atleap.sample.ui.MasterFragment">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/nav_header_height"
+        android:layout_height="@dimen/nav_header_height"
+        tools:src="@drawable/ic_launcher"
+        android:contentDescription="@string/item_image_contentdescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/todoTitle"
+        android:layout_below="@id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView.Medium"
+        tools:text="JakeWharton/ActionBarSherlock"
+        />
+
+    <TextView
+        android:id="@+id/todoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/todoTitle"
+        style="@style/TextView.Small"
+        tools:text="1234"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/todoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todoId"
+        android:layout_marginTop="@dimen/view_full_margin"
+        style="@style/TextView.Small"
+        tools:text="Action bar implementation which uses the native action bar on Android 4.0+ and a custom implementation on pre-4.0 through a single API and theme."
+        />
+
+
+
+</RelativeLayout>

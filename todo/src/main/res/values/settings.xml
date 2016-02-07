@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="todo_api_base_url">http://private-6a44a-todo55.apiary-mock.com</string>
+    <string name="oauth_client_id">secret</string>
+    <string name="oauth_client_secret">secret</string>
+    <string name="oauth_client_callback_url">http://callback.call</string>
+</resources>

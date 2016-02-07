@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Todo Sample</string>
+    <string name="no_network">No internet connection. Please check.</string>
+
+    <string name="activity_main_drawer_open">Open drawer</string>
+    <string name="activity_main_drawer_close">Close drawer</string>
+    <string name="activity_main_drawer_menu_search">Todo List</string>
+    <string name="activity_main_drawer_menu_logout">Logout</string>
+
+    <string name="fragment_detail_menu_share">Share</string>
+
+    <string name="activity_auth_title">Login</string>
+    <string name="activity_auth_cannot_login">Cannot login</string>
+    <string name="autenticating_message">Authenticating (fake)</string>
+    <string name="avatar_contentDescription">avatar</string>
+    <string name="item_image_contentdescription">Todo Item Image</string>
+
+</resources>
