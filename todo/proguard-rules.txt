@@ -72,10 +72,6 @@
 #android atleap
 -keep,allowoptimization,allowobfuscation class * extends com.apchernykh.todo.atleap.provider.sqlite.SQLiteUriMatcher { *; }
 
-
-#ActionView or ActionProvider classes
--keep class com.apchernyh.todo.atleap.sample.ui.SocialShareActionProvider { *; }
-
 -keepclassmembers class * {
  @javax.inject.Inject <init>(...);
  @javax.inject.Inject <fields>;
@@ -105,3 +101,37 @@
     <init> ();
 }
 
+-keep class retrofit.** { *; }
+-keep class com.squareup.okhttp.** { *; }
+-dontwarn rx.**
+-dontwarn com.google.appengine.api.urlfetch.**
+-dontwarn com.squareup.okhttp.**
+-dontwarn okio.**
+-dontwarn retrofit.**
+-keepclasseswithmembers class * {
+@retrofit.http.* <methods>; }
+-keep class com.j256.** {*;}
+-dontwarn android.support.v4.app.**
+-dontwarn roboguice.**
+-dontwarn com.apptentive.android.sdk.**
+-keep public class * extends com.google.inject.AbstractModule
+-keep public class * extends com.google.inject.AnnotationDatabase
+-keep public class javax.inject.** { *; }
+-keep public class javax.annotation.** { *; }
+-keep public class roboguice.** { *; }
+-keep public class android.app.** { *; }
+-dontwarn javax.annotation.**
+-dontwarn javax.inject.**
+-dontwarn sun.misc.Unsafe
+-dontwarn com.squareup.okhttp.**
+
+-keepclasseswithmembers class * {
+public <init> (android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+public <init> (android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * implements android.os.Parcelable { static android.os.Parcelable$Creator *; }
+-keepclassmembers class **.R$* { public static <fields>; }
+-dontwarn com.octo.**
+-dontwarn android.app.**
