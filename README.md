@@ -1,3 +1,5 @@
+This solution is based on AtLeap, see below.
+
 Android AtLeap accelerator
 ==========================
 

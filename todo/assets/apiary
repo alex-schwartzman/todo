@@ -1,0 +1,63 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# todo
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Questions Collection [/items]
+
+### List All Questions [GET]
+
++ Response 200 (application/json)
+
+        {
+        "items":
+        [
+            {
+                "id" : "59f8f400-4d61-4d0c-a600-5302c11bf2d7",
+                "priority": 1,
+                "title": "Feed the cat",
+                "created_at": "2016-06-01T08:55:51.620Z",
+                "description": "100g food1, 50g food2",
+                "icon_uri": "http://www.hey.fr/tools/emoji/ios_emoji_weary_cat_face.png"
+            },
+            {
+                "id" : "3f96cbdf-8f85-42e8-a908-2b1a06b5c673",
+                "priority": 2,
+                "title": "Feed myself",
+                "created_at": "2016-06-01T08:56:51.620Z",
+                "description": "3 times more than cat can have",
+                "icon_uri": "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/08/160x160x1F926-emojipedia-example.png.pagespeed.ic_.xswFKzZ2UD.png"
+            }
+        ]
+        }
+
+
+## Authentication [/login/oauth/access_token]
+
+### List All Questions [POST]
++ Response 200 (application/json)
+
+        {
+        "access_token": "myaccesstoken",
+        "scope": "whatever",
+        "token_type": "handmade_fake"
+        }
+
+
+## Authentication [/user]
+
+### List All Questions [GET]
++ Response 200 (application/json)
+
+        {
+        "id": 10,
+        "email": "cat@free.cat",
+        "company": "Free cat",
+        "name": "Happy Cat",
+        "login": "katze",
+        "avatar_url": "http://www.catster.com/wp-content/uploads/2015/06/laughing-cat-shutterstock_364320_0.jpg",
+        "scope": "whatever",
+        "token_type": "handmade_fake"
+        }
